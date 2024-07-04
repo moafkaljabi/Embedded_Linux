@@ -1,8 +1,19 @@
+# from bs4 import BeautifulSoup
+# import requests
+
+# html_text = requests.get('https://www.arbeitsagentur.de/jobsuche/suche?angebotsart=1&was=python&id=14225-214032_c7ecd19-S').text
+# soup = BeautifulSoup(html_text,'lxml')
+# jobs = soup.find_all('li', class_ ='ng-star-inserted')
+
+
+# print(jobs)
+
+
 from bs4 import BeautifulSoup
 import requests
 
-html_text = requests.get('https://www.arbeitsagentur.de/jobsuche/suche?angebotsart=1&was=python&id=14225-214032_c7ecd19-S').text
+qoute_text = requests.get('https://quotes.toscrape.com/').text
+soup = BeautifulSoup(qoute_text,'lxml')
 
-soup = BeautifulSoup(html_text,'lxml')
-
-print(soup)
+qoutes = soup.find_all('div', class_='quote')
+print(qoutes)
