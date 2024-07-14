@@ -15,18 +15,14 @@ body {
     padding: 0 20px;
     background-color: #f0f0f0; /* Light background color */
 }
-
-h1, h2, h3 {
+h1 {
     color: #333;
-    border-bottom: 2px solid #007BFF; /* Bottom border for section titles */
-    padding-bottom: 5px;
+    margin-bottom: 20px; /* Add margin below heading */
 }
-
 ul {
     list-style-type: none;
     padding-left: 0;
 }
-
 li {
     margin-bottom: 10px;
 }
@@ -41,14 +37,9 @@ header {
 
 /* Link styles */
 a {
-    color: #0066cc; /* Default link color */
+    color: #333; /* Change link color */
     text-decoration: none; /* Remove underline */
-}
-
-/* Specific link styles for Python section */
-#python a[href="basics.html"],
-#python a[href="pandas.html"] {
-    color: #ff6600; /* Orange color for these links */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
 }
 
 /* Hover effect for links */
@@ -59,6 +50,11 @@ a:hover {
 /* Sections styling */
 section {
     margin-bottom: 40px; /* Add space between sections */
+}
+h2 {
+    color: #333;
+    border-bottom: 2px solid #007BFF; /* Bottom border for section titles */
+    padding-bottom: 5px;
 }
 
 /* Footer styling */
