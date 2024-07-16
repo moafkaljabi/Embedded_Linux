@@ -16,7 +16,7 @@ body {
     background-color: #f0f0f0; /* Light background color */
 }
 
-h1, h2, h3 {
+h1, h2 {
     color: #333;
     border-bottom: 2px solid #007BFF; /* Bottom border for section titles */
     padding-bottom: 5px;
