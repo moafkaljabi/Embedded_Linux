@@ -1,0 +1,3 @@
+/home/moafk/Documents/Embedded_Linux/c++/backend/build/CMakeFiles/EmployeeManagement.dir
+/home/moafk/Documents/Embedded_Linux/c++/backend/build/CMakeFiles/edit_cache.dir
+/home/moafk/Documents/Embedded_Linux/c++/backend/build/CMakeFiles/rebuild_cache.dir
