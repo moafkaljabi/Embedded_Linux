@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef UPDATE_RECORD_H
 #define UPDATE_RECORD_H
 

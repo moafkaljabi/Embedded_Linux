@@ -1,3 +1,6 @@
+#pragma once
+
+
 #ifndef READ_RECORDS_H
 #define READ_RECORDS_H
 

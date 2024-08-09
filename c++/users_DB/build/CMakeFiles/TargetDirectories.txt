@@ -1,7 +1,0 @@
-/home/moafk/Documents/Embedded_Linux/c++/users_DB/build/CMakeFiles/appMySQL_DB.dir
-/home/moafk/Documents/Embedded_Linux/c++/users_DB/build/CMakeFiles/edit_cache.dir
-/home/moafk/Documents/Embedded_Linux/c++/users_DB/build/CMakeFiles/rebuild_cache.dir
-/home/moafk/Documents/Embedded_Linux/c++/users_DB/build/CMakeFiles/list_install_components.dir
-/home/moafk/Documents/Embedded_Linux/c++/users_DB/build/CMakeFiles/install.dir
-/home/moafk/Documents/Embedded_Linux/c++/users_DB/build/CMakeFiles/install/local.dir
-/home/moafk/Documents/Embedded_Linux/c++/users_DB/build/CMakeFiles/install/strip.dir

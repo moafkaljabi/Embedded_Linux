@@ -1,3 +1,6 @@
+#pragma once
+
+
 #ifndef DELETE_RECORD_H
 #define DELETE_RECORD_H
 

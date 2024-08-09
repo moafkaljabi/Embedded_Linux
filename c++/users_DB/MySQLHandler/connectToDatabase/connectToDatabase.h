@@ -1,3 +1,6 @@
+#pragma once
+
+
 #ifndef CONNECT_TO_DATABASE_H
 #define CONNECT_TO_DATABASE_H
 

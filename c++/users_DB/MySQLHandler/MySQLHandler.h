@@ -1,3 +1,6 @@
+#pragma once
+
+
 #ifndef MYSQLHANDLER_H
 #define MYSQLHANDLER_H
 

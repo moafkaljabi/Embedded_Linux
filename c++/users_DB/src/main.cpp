@@ -1,4 +1,7 @@
+// #include "../include/main.h"
+
 #include "../include/main.h"
+#include "../MySQLHandler/MySQLHandler.h"
 
 void displayMenu() {
     std::cout << "Choose an operation:\n"
