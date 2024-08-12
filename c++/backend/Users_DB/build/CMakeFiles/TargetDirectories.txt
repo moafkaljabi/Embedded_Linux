@@ -1,0 +1,3 @@
+/home/moafk/Documents/Embedded_Linux/c++/backend/Users_DB/build/CMakeFiles/myProject.dir
+/home/moafk/Documents/Embedded_Linux/c++/backend/Users_DB/build/CMakeFiles/edit_cache.dir
+/home/moafk/Documents/Embedded_Linux/c++/backend/Users_DB/build/CMakeFiles/rebuild_cache.dir
