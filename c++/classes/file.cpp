@@ -1,66 +1,62 @@
+#include <cstddef>
+#include <cstring>
 #include <iostream>
-#include <string.h>
 
 
-
-// class MyString {
-
-// private:
-//     char * data;
-//     size_t length;
-
-// public:
-
-
-//     // default contructor
-//     MyString() : data(nullptr), length(0) {}
-//     // destructor ~
-//     ~ MyString();
-
-//     // Copy constructor 
-
-//     // Copy assignment constructor 
-// };
-
-
-// int main() {
-
-//     std::cout << "" << std::endl;
-
-//     return 0;
-// }
-
-
-class Point{
+class MyString {
 
 private:
-    int x;
-    int y;
+    char* data;
+    size_t length;
 
 public:
+    
+    // Default constructor
+    MyString(): data(nullptr), length(0){}
 
-// default constructor
-Point(){};
+    // parametrized constructor
+    MyString(const char* str){
+        if(str) {
+            length = std::strlen(str);            
+            data = new char [length + 1];
+            std::strcpy(data,str);
+        } else {
+            str = nullptr;
+            length = 0;
+        }
+    }
 
-// parametrized constructor 
-Point(int i, int j) : x(i), y(j){};
+    // Copy constructor
 
 
+    // Destructor
+    ~MyString(){};
 
-int getX(){return x;};
-int getY(){return y;};
+    // Copy assignment constructor
+
+    // Size()
+    const char size(){
+        return length;
+    }
+
+    // Operator []
+     char& operator[](size_t index){
+        return data[index];
+     } 
+
+     // Operator []  // only for reading.
+     const char& operator[](size_t index)const {
+        return data[index];
+     } 
+
+    // c_str
+
 
 
 };
 
 
 int main(){
-
-    Point p1(2,4);
-
-    std::cout << "Value of x is: " <<  p1.getX() << std::endl << "Value of y is: " <<  p1.getY() << std::endl;
- 
-
 
     return 0;
 }

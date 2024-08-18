@@ -17,11 +17,11 @@ int main() {
         sql::Statement *stmt = con->createStatement();
 
         // Example: Insert a new device
-        std::string insertQuery = "INSERT INTO Devices (PersonID, DeviceName, DeviceStatus) VALUES (1, 'BLDC693 Motor', 'on')";
+        std::string insertQuery = "INSERT INTO Devices (PersonID, DeviceName, DeviceStatus) VALUES (1, 'My BLDC Motor', 'on')";
         stmt->execute(insertQuery);
 
         // Example: Update device status
-        std::string updateQuery = "UPDATE Devices SET DeviceStatus = 'off' WHERE DeviceName = 'BLDC Motor'";
+        std::string updateQuery = "UPDATE Devices SET DeviceStatus = 'off' WHERE DeviceName = 'My BLDC Motor'";
         stmt->execute(updateQuery);
 
         delete stmt;

@@ -77,3 +77,30 @@ int main() {
     std::cout << "Character at index 1: " << str1[1] << '\n'; // Access operator
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
