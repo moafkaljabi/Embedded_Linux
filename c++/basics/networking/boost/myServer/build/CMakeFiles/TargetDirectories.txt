@@ -1,0 +1,3 @@
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/boost/myServer/build/CMakeFiles/myServer.dir
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/boost/myServer/build/CMakeFiles/edit_cache.dir
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/boost/myServer/build/CMakeFiles/rebuild_cache.dir

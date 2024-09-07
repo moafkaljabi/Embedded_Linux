@@ -1,0 +1,3 @@
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/boost/web_client/build/CMakeFiles/web_client.dir
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/boost/web_client/build/CMakeFiles/edit_cache.dir
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/boost/web_client/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/boost/pandaNet/pandaClient/build/CMakeFiles/pandaClient.dir
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/boost/pandaNet/pandaClient/build/CMakeFiles/edit_cache.dir
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/boost/pandaNet/pandaClient/build/CMakeFiles/rebuild_cache.dir
