@@ -1,4 +1,4 @@
-# Install script for directory: /home/moafk/Documents/Embedded_Linux/c++/backend/Users_DB
+# Install script for directory: /home/moafk/Documents/Embedded_Linux/c++/backend/MyUsers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/moafk/Documents/Embedded_Linux/c++/backend/Users_DB/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/moafk/Documents/Embedded_Linux/c++/backend/MyUsers/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

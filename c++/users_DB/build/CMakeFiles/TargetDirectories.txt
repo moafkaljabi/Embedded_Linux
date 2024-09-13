@@ -1,0 +1,3 @@
+/home/moafk/Documents/Embedded_Linux/c++/users_DB/build/CMakeFiles/appMySQL_DB.dir
+/home/moafk/Documents/Embedded_Linux/c++/users_DB/build/CMakeFiles/edit_cache.dir
+/home/moafk/Documents/Embedded_Linux/c++/users_DB/build/CMakeFiles/rebuild_cache.dir
