@@ -19,59 +19,65 @@ steps:
 #include <cppconn/connection.h>
 #include <cppconn/exception.h>
 #include <iostream>
+#include <memory>
+#include <string>
 #include <mysql_connection.h>
 #include <mysql_driver.h>
-#include <memory>
 #include <cppconn/statement.h>
+
 #include "config.h"
-#include <string>
 
 
-int main(){
-    
-    // create driver and con.
-    sql::mysql::MySQL_Driver *driver;
-    std::unique_ptr<sql::Connection> con;
+int main() {
 
-try {
-    driver = sql::mysql::get_mysql_driver_instance();
-    con.reset();
+    // Define the Driver and connection. 
 
-    // Choose DB.
-    con->setSchema(DB_NAME);
+    sql::mysql::MySQL_Driver *driver; // Singleton, MySQL handles it internally, do not use smart pointer.
+    std::unique_ptr<sql::Connection> connection;
 
-    // Create statement 
-    std::unique_ptr<sql::Statement> statement(con->createStatement());
+try{
 
-    // Get input from the user
-    
+    // Try to connect.
+    driver  = sql::mysql::get_mysql_driver_instance();
+    connection.reset(driver->connect(DB_HOST, DB_NAME, DB_PASSWORD));
+
+    connection->setSchema(DB_NAME);     // Select Database.
+
+
+    std::unique_ptr<sql::Statement> statement(connection->createStatement()); // To perform SQL queries.
+
+    // define the database columns.
     std::string PersonID, DeviceName, DeviceStatus, DeviceNewStatus;
 
-    std::cout <<"Enter the PersonID: "<< std::endl;
-    std::getline(std::cin,PersonID);
 
-    std::cout << "Enter the Device name: " << std::endl;
-    std::getline(std::cin, DeviceName);
+    // Get input from the user.
+    std::cout << "Enter the Personal ID: ";
+    getline(std::cin,PersonID);
 
-    std::cout << "Enter Device Status: " << std::endl;
-    std::getline(std::cin, DeviceStatus);
+    std::cout << "Enter the Device name: ";
+    getline(std::cin, DeviceName);
 
-    std::cout << "Enter device new status: " << std::endl;
-    std::getline(std::cin,DeviceNewStatus);
+    std::cout << "Enter device status (on/off):  ";
+    getline(std::cin, DeviceStatus);
 
-    // Insert a new device. litrally write the SQL Query.
-    std::string insertQuery = "INSERT INTO Devices (PersonID, DeviceName, DeviceStatus) VALUES (" +
-                                  PersonID + ", '" + DeviceName + "', '" + DeviceStatus + "')";
-    statement->execute(insertQuery);
+    std::cout << "Enter device new status: ";
+    getline(std::cin,DeviceNewStatus);
+
+
+    // Create queries.
+    std::string insertQuery = "Insert ";
+
     
-    // Update device status.
-    std::string updateQuery = "UPDATE Devices SET DeviceStatus = '" + DeviceNewStatus + "' WHERE DeviceName = '" + DeviceName + "'";
-    statement->execute(updateQuery);
+    // Add device Querey.
+    statement->execute(insertQuery);
 
-    // Update query.
+
+    // Inform that the value added successfully.
+    std::cout << "Device added successfully." << std::endl;
 
 } catch (sql::SQLException &e){
     std::cerr << "Exception: " << e.what() << std::endl;
+
 }
 
     return 0;
