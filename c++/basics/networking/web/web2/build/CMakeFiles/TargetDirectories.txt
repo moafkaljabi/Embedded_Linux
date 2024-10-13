@@ -1,0 +1,3 @@
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/web/web2/build/CMakeFiles/server.dir
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/web/web2/build/CMakeFiles/edit_cache.dir
+/home/moafk/Documents/Embedded_Linux/c++/basics/networking/web/web2/build/CMakeFiles/rebuild_cache.dir

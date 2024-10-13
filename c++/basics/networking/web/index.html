@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Control</title>
+</head>
+<body>
+    <h1>Control Your PC</h1>
+    <button id="openFirefox">Open Firefox</button>
+
+    <script>
+        // Initialize WebSocket connection
+        const socket = new WebSocket('ws://localhost:8080');
+
+        // Connection opened
+        socket.onopen = function() {
+            console.log('WebSocket connection established');
+        };
+
+        // Listen for messages from the server
+        socket.onmessage = function(event) {
+            console.log('Received from server:', event.data);
+        };
+
+        // Handle button click to send a command to open Firefox
+        document.getElementById('openFirefox').onclick = function() {
+            const command = JSON.stringify({ action: 'open_firefox' });
+            socket.send(command);
+            console.log('Sent command to open Firefox');
+        };
+
+        // Handle connection errors
+        socket.onerror = function(error) {
+            console.error('WebSocket error:', error);
+        };
+
+        // Handle connection close
+        socket.onclose = function() {
+            console.log('WebSocket connection closed');
+        };
+    </script>
+</body>
+</html>

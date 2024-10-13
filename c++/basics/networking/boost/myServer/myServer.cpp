@@ -2,7 +2,7 @@
 /*
 
 We will have three main dirs;
-1.Networking; comon.
+1.Networking; common.
 2. TCP server.
 3. TCP client.
 
