@@ -74,8 +74,6 @@ void perform_http_request(){
 }
 
 
-
-
 int main(){
 
 perform_http_request();
