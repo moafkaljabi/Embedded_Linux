@@ -1,0 +1,3 @@
+/home/moafk/Documents/Embedded_Linux/c++/backend/networking/httpServer/src/build/CMakeFiles/HttpServer.dir
+/home/moafk/Documents/Embedded_Linux/c++/backend/networking/httpServer/src/build/CMakeFiles/edit_cache.dir
+/home/moafk/Documents/Embedded_Linux/c++/backend/networking/httpServer/src/build/CMakeFiles/rebuild_cache.dir
