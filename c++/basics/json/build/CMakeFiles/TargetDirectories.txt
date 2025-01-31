@@ -1,0 +1,3 @@
+/home/moafk/Documents/Embedded_Linux/c++/basics/json/build/CMakeFiles/rapidjson_example.dir
+/home/moafk/Documents/Embedded_Linux/c++/basics/json/build/CMakeFiles/edit_cache.dir
+/home/moafk/Documents/Embedded_Linux/c++/basics/json/build/CMakeFiles/rebuild_cache.dir
