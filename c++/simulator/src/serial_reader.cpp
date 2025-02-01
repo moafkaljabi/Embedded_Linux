@@ -66,6 +66,28 @@ SensorData SerialReader::readData() {
 
 
 
+SensorData SerialReader::readRawData() {
+    char buffer[32];
+
+    int bytesRead = read(serialPort, buffer, sizeof(buffer) - 1);
+
+    if (bytesRead > 0) {
+        buffer[bytesRead] = '\0';  // Null-terminate the string
+        // Strip out newline or carriage return characters, if present
+        if (bytesRead > 0 && (buffer[bytesRead - 1] == '\n' || buffer[bytesRead - 1] == '\r')) {
+            buffer[bytesRead - 1] = '\0';
+        }
+
+        std::cout << "Received: " << buffer << std::endl;
+    } else {
+        std::cerr << "Error reading the raw data!" << std::endl;
+    }
+
+    return SensorData();
+}
+
+
+
 
 
 

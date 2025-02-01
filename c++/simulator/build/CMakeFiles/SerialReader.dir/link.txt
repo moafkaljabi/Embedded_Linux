@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/SerialReader.dir/src/data_processor.cpp.o CMakeFiles/SerialReader.dir/src/main.cpp.o CMakeFiles/SerialReader.dir/src/network_sender.cpp.o CMakeFiles/SerialReader.dir/src/serial_reader.cpp.o -o SerialReader  -lpthread 

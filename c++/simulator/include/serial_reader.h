@@ -25,6 +25,7 @@ public:
     ~SerialReader();
 
     SensorData readData();
+    SensorData readRawData();
 
 };
 
