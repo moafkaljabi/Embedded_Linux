@@ -1,10 +1,16 @@
+// Reads data from the UART
+
 #pragma once 
 
 #ifndef SERIAL_READER_H
 #define SERIAL_READER_H
 
 #include <string>
-#include <sensor_simulator.h>
+
+
+struct SensorData {
+    float accelX, accelY, accelZ;
+};
 
 class SerialReader {
 
@@ -14,11 +20,11 @@ private:
     std::string device;
 
 public:
-
+ 
     SerialReader(const std::string& device, int baudrate);
     ~SerialReader();
 
-    SensorSimulator::SensorData readData();
+    SensorData readData();
 
 };
 
