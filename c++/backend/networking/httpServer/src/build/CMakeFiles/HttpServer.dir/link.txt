@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/HttpServer.dir/main.cpp.o CMakeFiles/HttpServer.dir/request.cpp.o CMakeFiles/HttpServer.dir/response.cpp.o -o HttpServer  -lpthread 
