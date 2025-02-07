@@ -2,9 +2,6 @@
 
 #pragma once 
 
-#ifndef SERIAL_READER_H
-#define SERIAL_READER_H
-
 #include <string>
 
 
@@ -29,4 +26,3 @@ public:
 
 };
 
-#endif
