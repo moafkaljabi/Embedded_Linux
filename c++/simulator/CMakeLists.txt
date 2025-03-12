@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.12)
 
 # Set project name
 project(SerialReader)
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 # Add source files
 file(GLOB SOURCES "src/*.cpp")

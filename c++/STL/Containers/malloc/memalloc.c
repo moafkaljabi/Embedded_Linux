@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <pthread.h>
-/* Only for the debug printf */
+
 #include <stdio.h>
 
 typedef char ALIGN[16];
