@@ -17,13 +17,14 @@ steps:
 */
 
 #include <cppconn/connection.h>
-#include <cppconn/exception.h>
-#include <iostream>
-#include <memory>
-#include <string>
 #include <mysql_connection.h>
 #include <mysql_driver.h>
 #include <cppconn/statement.h>
+#include <cppconn/exception.h>
+
+#include <string>
+#include <iostream>
+#include <memory>
 
 #include "config.h"
 

@@ -1,4 +1,4 @@
 
-#! bash
+#!/bin/bash
 
-g++ -std=c++11 -o simulator simulator.cpp
+g++ -std=c++20 -o simulator simulator.cpp
